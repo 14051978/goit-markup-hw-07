@@ -59,7 +59,7 @@ ul{
     padding-left: 0;
 }
 /* Basic styles */
-.container{
+.container {
     width: 100%;
     min-width: 320px;
     max-width: 428px;
@@ -67,6 +67,11 @@ ul{
     padding-right: 16px;
     margin: 0 auto ;
 }
+/* @media screen and (max-width: 767px){
+.container {
+    padding-left: 16px;
+    padding-right: 16px;}
+} */
 @media only screen and (min-width: 768px) {
 .container{
     max-width: 768px;
@@ -84,7 +89,7 @@ ul{
   position: fixed;
   top: 0;
   width: 100%;
-  z-index:90;
+  z-index:3;
   background-color: var(--primary-white);
 }
 @media only screen and (min-width: 768px){
@@ -311,7 +316,7 @@ span{
     padding-bottom: 188px;}
 }
 .hero-section{
-    min-width: 428px;
+    min-width: 320px;
     max-width: 1440px;
     margin-left:auto ;
     margin-right: auto;
@@ -326,27 +331,42 @@ span{
     .container-moto{
     display: block;
     }
-
-    @media only screen and (min-width: 768px) {
-    .section-moto{
-    max-width: 496px;
-    margin-bottom: 48px;
-    margin-left: auto;
+.section-moto{
     margin-right: auto;
-         
+    margin-left: auto;
+    margin-bottom: 72px;
+    max-width: 496px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
     color: var(--primary-white);
+    }
+@media only screen and (min-width: 768px) and (max-width: 1157px){
+.section-moto{
+    margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.07;
+     } 
+     }
+/* @media only screen and (min-width: 768px) {
+.section-moto{
+    margin-bottom: 48px; 
+         
+    
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
-    }}
+    }} */
 @media only screen and (min-width: 1158px){
 .section-moto{
     margin-bottom: 48px;
-    font-size: 56px;
-    line-height: 1.07;}
-}
+    
+}}
 .section-button{
 
     display: block;
@@ -758,10 +778,23 @@ span{
     background-color:var(--text-color);
     
 }
+
+
+    
 .footer-container{
     display: flex;
     align-items: baseline;
-    
+    flex-wrap: wrap;
+    gap: 72px 24px;
+}
+@media only screen and (max-width: 767px){
+
+.footer-container{
+    justify-content: center;
+}}
+@media only screen and (min-width: 1158px){
+.footer-container{
+    gap: 0;}
 }
 .left-footer{
 margin-right: 120px;
