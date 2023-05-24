@@ -287,6 +287,8 @@ span{
 
 @media only screen and (min-width: 768px) and (max-width: 1157px){
 .contacts-link {
+    display: block;
+    margin-bottom: 12px;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;}
@@ -324,7 +326,7 @@ span{
     .container-moto{
     display: block;
     }
-    
+
     @media only screen and (min-width: 768px) {
     .section-moto{
     max-width: 496px;
