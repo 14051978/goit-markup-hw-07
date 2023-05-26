@@ -1275,13 +1275,14 @@ color: #2E2F42;
  .footer-form{
     /* display: flex; */
     align-items: center;
+    
       
  }
  @media only screen and (min-width: 768px) {
     .footer-form{
         display: flex;
         align-items: center;
-     
+    
    
     }
 }
@@ -1392,6 +1393,8 @@ color: #2E2F42;
 @media only screen and (min-width: 768px) {
    .sub-button{ 
     margin-left: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
 }    
   }
 
