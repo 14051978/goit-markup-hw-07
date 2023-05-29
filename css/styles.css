@@ -249,19 +249,21 @@ span{
 .contacts-item:not(:last-child){
     margin-right: 40px;
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
-    .contacts-item.mail{
-        margin-top: 16px;
-        margin-bottom: 12px;
+  
+   .contacts-item:not(:last-child){
+   margin-right: 0;
     
   }
 }
-/* @media only screen and (min-width: 768px) and (max-width: 1157px) {
-    .contacts-item.tel{
-        margin-bottom:16px;
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+    .contacts-item.mail{     
+    margin-bottom: 12px;
     
   }
-} */
+}
+
 @media screen and (max-width: 767px){
 .contacts{
     display: none;}
@@ -309,11 +311,12 @@ span{
     transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 /* main-section */
-.hero-container{
-    padding: 112px 54px;
+.hero-container.container{
+    padding-top: 112px;
+    padding-bottom: 112px;
 }
 @media only screen and (min-width: 1158px){
-.hero-container {
+.hero-container.container {
     padding-top: 188px;
     padding-bottom: 188px;}
 }
@@ -759,7 +762,7 @@ color: #FFFFFF;
     justify-content: center;
 
 }
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 768px) {
     .customer-list {
         display: flex;
         gap: 24px;
@@ -1542,7 +1545,7 @@ gap: 56px;
     color:var(--accent-color);
  }
  
- .mail{
+ .mobile-mail{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
