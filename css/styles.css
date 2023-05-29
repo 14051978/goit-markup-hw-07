@@ -755,7 +755,7 @@ color: #FFFFFF;
 .customer-list {
     display: flex;
     flex-wrap: wrap;
-    column-gap:   16px;
+    column-gap: 16px;
     row-gap: 72px;
 
     align-items: center;
@@ -765,7 +765,8 @@ color: #FFFFFF;
 @media only screen and (min-width: 768px) {
     .customer-list {
         display: flex;
-        gap: 24px;
+        column-gap: 24px;
+        row-gap: 72px;
         /* align-items: center;
         justify-content: center; */
     
