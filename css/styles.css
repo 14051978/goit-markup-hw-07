@@ -1160,7 +1160,7 @@ color: #FFFFFF;
     transition: transform var(--transition);
     padding: 72px 24px 24px 24px;
 }
-@media screen and (max-width: 427px){
+@media screen and (max-width: 427.8px){
     .modal {
         width: 95%;
     }
